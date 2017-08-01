@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 4, Exercise 1</title>
+	
+</head>
+<body>
+	<script>
+		//this js is for enter number mutilple math calculate.
+		var loopCounter;
+		var loopBack;
+		var times= prompt ("Enter the number you want","");
+		//alert ("times= "+ times);
+		function multiple(times){
+			
+			for (loopCounter=times; loopCounter<=9;loopCounter++){
+				//for(loopBack=times; loopBack<=loopCounter;loopBack++){
+			
+					document.write(times+ " * "+loopCounter+" =" +parseInt(loopCounter)*parseInt(times)+"	");
+				//}
+				document.write("<br/>");
+			}
+
+		}
+		multiple(times);
+	</script>
+</body>
+</html>

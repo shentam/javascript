@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 4, Exercise 2</title>
+	
+</head>
+<body>
+	<script>
+		//this js is for enter number mutilple math calculate.
+		var loopCounter;
+		var loopBack;
+		var times=-1;
+			
+
+		//alert ("times= "+ times);
+		function multiple(times){
+		
+			for (loopCounter=times; loopCounter<=9;loopCounter++){
+				//for(loopBack=times; loopBack<=9;loopBack++){
+		
+				document.write(times+ " * "+loopCounter+" =" +parseInt(loopCounter)*parseInt(times)+"	");
+				//}
+				document.write("<br/>");
+			}
+
+		}
+		
+		while((times=prompt ("Enter the number you want","-1"))!=-1){
+			
+			while(isNaN(times)== true){
+				times=prompt (times+ " is not a void number! Please enter a void number ","-1");
+			}
+			if (times==-1){
+				break;
+			}
+			multiple(times);
+		}
+	</script>
+</body>
+</html>

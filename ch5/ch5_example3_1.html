@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 5, Example 3_1</title>
+	
+</head>
+<body>
+	<script>
+		var number=[1,2,3,4,5];
+
+		function doubleAndReturn(value,index,array){
+			var result =value*2;
+			return result;
+		}
+		
+		var doubledNumbers=number.map(doubleAndReturn);
+		alert ("The doubled numbers are: " + doubledNumbers);
+	</script>
+</body>
+</html>
