@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 5, ex1</title>
+	
+</head>
+<body>
+	<script>
+		var months=["January","February","March","April","May","June","July","August","September","October","Novermber","December"];
+		var nowDate=new Date();
+		var newDay=nowDate.getDate();
+		var newMonth=months[nowDate.getMonth()];
+		var newYear=nowDate.getFullYear()+1;
+		switch (newDay){
+			case 1:
+			case 21:
+			case 31:
+				daySuffix ="st";
+				break;
+			case 2:
+			case 22:
+				daySuffix ="nd";
+				break;
+			case 3:
+			case 23:
+				daySuffix ="rd";
+				break;
+			default:
+				daySuffix="th";
+				break;
+ 		}
+		if(newMonth=="February" && newDay==29){
+			newMonth="March";
+			newDay="1";
+		}
+		document.write("After 12 months, it is the " + newDay + daySuffix + " day ");
+		document.write("in the month of " + newMonth);
+		document.write(" in the year " + newYear);
+
+
+	</script>
+</body>
+</html><!DOCTYPE html>
+
+
