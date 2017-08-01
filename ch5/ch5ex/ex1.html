@@ -8,10 +8,11 @@
 <body>
 	<script>
 		var months=["January","February","March","April","May","June","July","August","September","October","Novermber","December"];
-		var nowDate=new Date();
+		var nowDate=new Date("2004/2/29");
+		nowDate.setMonth(nowDate.getMonth()+12);
 		var newDay=nowDate.getDate();
 		var newMonth=months[nowDate.getMonth()];
-		var newYear=nowDate.getFullYear()+1;
+		var newYear=nowDate.getFullYear();
 		switch (newDay){
 			case 1:
 			case 21:
@@ -30,13 +31,13 @@
 				daySuffix="th";
 				break;
  		}
-		if(newMonth=="February" && newDay==29){
-			newMonth="March";
-			newDay="1";
-		}
-		document.write("After 12 months, it is the " + newDay + daySuffix + " day ");
+		//if(newMonth=="February" && newDay==29){
+		//	newMonth="March";
+		//	newDay="1";
+		//}
+		document.write("After 12 months, it is the " + newDay+ daySuffix + " day ");
 		document.write("in the month of " + newMonth);
-		document.write(" in the year " + newYear);
+		document.write(" in the year " + newYear );
 
 
 	</script>
