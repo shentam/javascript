@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 5, ex2</title>
+	
+</head>
+<body>
+	<script>
+		var user=new Array();
+		var name;
+		var i=0;
+		function input(){
+			while((name=prompt("Enter a name: ",""))!=""){				
+				user[i]=name;//user[user.length]=name; this sentence can save a varible i
+				i++;
+			}
+			return user;
+		}
+		
+		function display(){
+			sorted=user.sort();
+			//document.write(sorted.join("<br/>"));
+			for(j=0;j<user.length;j++){
+				document.write(sorted[j]+"<br/>");
+			}
+		}
+		
+		input();
+		display();
+	</script>
+</body>
+</html>
+
+
