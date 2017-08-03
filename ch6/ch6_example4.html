@@ -7,7 +7,11 @@
 </head>
 <body>
 	<script>
-
+		var text ="He then said 'My Name is O'Connerly, yes"+"that's right, O'Connerly'";
+		document.write("Original: "+text +"<br/>");
+		var myRegExp=/\B'|'\B/g;
+		text=text.replace(myRegExp,'"');
+		document.write("Corrected: "+text);
 	
 	</script>
 </body>
