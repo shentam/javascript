@@ -15,15 +15,15 @@
 			var minute;
 			var second;
 			hour=currentTime.getHours();
-			if(hour<10 && hour >=0) {
+			if(hour<10) {
 				hour="0"+hour;
 			}
 			minute=currentTime.getMinutes();
-			if(minute<10 && minute >=0) {
+			if(minute<10) {
 				minute="0"+minute;
 			}
 			second=currentTime.getSeconds();
-			if(second<10 && second >=0) {
+			if(second<10) {
 				second="0"+second;
 			}				
 			document.getElementById("output").innerHTML=hour+":"+minute+":"+second;
