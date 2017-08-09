@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 6, Exercise3</title>
+	
+</head>
+<body>
+	
+	<script>
+		var myString =prompt("Please enter some words to test.","");
+		
+		var myRegExp=/fuck|shit|bitch|dick/gi;
+		//var myRegExp= new RegExp("(\\b\\w+\\b) \\1","g");
+	
+		myString=myString.replace(myRegExp,"****");
+		document.write(myString);
+	</script>
+</body>
+</html>
+
+

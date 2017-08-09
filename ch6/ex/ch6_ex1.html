@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 6, Exercise1</title>
+	
+</head>
+<body>
+	
+	<script>
+		var myString ="This sentence has has a fault and and we need to fix it.";
+		
+		//var myRegExp=/(\b\w+\b) \1/g;
+		var myRegExp= new RegExp("(\\b\\w+\\b) \\1","g");
+	
+		myString=myString.replace(myRegExp,"$1");
+		document.write(myString);
+	</script>
+</body>
+</html>
+
+
