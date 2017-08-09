@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 7, Example5</title>
+	
+</head>
+<body>
+
+	<div id= "output"></div>
+	<script>
+		function getBirthday(){
+			var birthday= new Date();
+			birthday.setFullYear(prompt("Please enter the year of your bithday",""));
+			birthday.setMonth(prompt("Please enter the month of your bithday","")-1);
+			birthday.setDate(prompt("Please enter the day of your bithday",""));
+			var weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+			/*var weekday=birthday.getUTCDay(); /
+			switch(weekday){
+				case 0:
+				weekday="Sunday"
+				break;
+				case 1:
+				weekday="Monday"
+				break;
+				case 2:
+				weekday="Tuesday"
+				break;
+				case 3:
+				weekday="Wednesday"
+				break;
+				case 4:
+				weekday="Thursday"
+				break;
+				case 5:
+				weekday="Friday"
+				break;	
+				case 6:
+				weekday="Saturday"
+				break;		
+			}*/
+
+			var month=["Janurary","Feburary","March","April","May","June","July","August","September","Octorber","Novermber","December"];
+			
+			/*var month=birthday.getMonth();
+			switch(month){
+				case 0:
+				month="Janurary"
+				break;
+				case 1:
+				month="Feburary"
+				break;
+				case 2:
+				month="March"
+				break;
+				case 3:
+				month="April"
+				break;
+				case 4:
+				month="May"
+				break;
+				case 5:
+				month="June"
+				break;	
+				case 6:
+				month="July"
+				break;
+				case 7:
+				month="August"
+				break;
+				case 2:
+				month="September"
+				break;
+				case 3:
+				month="October"
+				break;
+				case 4:
+				month="Novermber"
+				break;
+				case 5:
+				month="December"
+				break;		
+			}*/
+
+			var date=birthday.getDate();
+			switch(date){
+				case 1||21||31:
+				date=date+"st"
+				break;
+				case 2||22:
+				date=date+"nd"
+				break;
+				case 3:
+				date=date+"rd"
+				break;
+				default:
+				date=date+"th"
+		
+			}
+
+			var output=weekday[birthday.getUTCDay()] +" "+ date+" "+month[birthday.getMonth()]+" "+birthday.getFullYear();
+			return output;
+				
+
+			
+
+		}
+		document.getElementById("output").innerHTML="your birthday is "+getBirthday();
+		
+	</script>
+</body>
+</html>
+
+
