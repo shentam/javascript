@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 7, Example4</title>
+	
+</head>
+<body>
+	<script>
+		function doThisLate(){
+			alert("Time's up!");
+		}
+
+		var timerId=setTimeout(doThisLate,3000);
+		
+		clearTimeout(timerId);
+	</script>
+</body>
+</html>
+
+
