@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Chapter 8, Exercise2</title>
+	
+</head>
+<body>
+	<img src="" width="200" height="150" alt="My Image"/>	
+
+
+	<script>
+		var myImages=[
+			"usa.gif",
+			"canada.gif",
+			"jamaica.gif",
+			"mexico.gif",
+		];
+		
+		function getRandom(min,max){
+			return Math.floor(Math.random()*max)+min;
+		}
+		var imgIndex=getRandom(0,myImages.length);
+		alert(imgIndex);
+
+		document.images[0].src="../"+myImages[imgIndex];
+	</script>
+</body>
+</html>
+
+
